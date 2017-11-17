@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--JQUERY-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/stylesheets/profile.css">
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	
+	<!-- <script type="text/javascript" src="js/scripts.js"></script> -->
+
+</head>
+<body>
+
+	
+	<div class="container">
+
+
+		
+		<div class="page-header">
+				<h1>Welcome <small><%=user.name%></small></h1>
+			</div>
+			<div id="info" class="col-sm-12">
+				<div class="col-sm-3">
+
+					<img src="http://media.masslive.com/breakingnews/photo/2012/07/norrisjpg-02cf5b55dfb25bd6.jpg">
+					<div class="col-sm-12">
+						<form action="/changeProcess" method="post">
+
+			<button class="col-sm-6 btn btn-primary" id="change-info-btn">Change Info</button>
+					<a href="/"><button class=" col-sm-4 btn btn-danger" id="exit-btn">Logout</button></a>
+				
+
+		</form>
+		</form>
+	</div>
+				</div>
+				<div class="col-sm-5">
+					<table style="width:100%">
+				<h3>Profile:</h3>
+
+						  			<tr>
+    				<th>Name:</th>
+    			<td><%=user.name%></td>
+  			</tr>
+  			<tr>
+    			<th>Email:</th>
+    			<td><%=user.email%></td>
+  			</tr>
+  			<tr>
+    			<th>Phone:</th>
+    			<td><%=user.phone%></td>
+  			</tr>
+
+  			<tr>
+    			<th>Address:</th>
+   				<td ><%=user.address%></td>
+  			</tr>
+  			<tr>
+    			<th>City:</th>
+   				<td ><%=user.city%></td>
+  			</tr>
+  			<tr>
+    			<th>State:</th>
+   				<td ><%=user.state%></td>
+  			</tr>
+  			<tr>
+  				<th>Zipcode:</th>
+  			<td><%=user.zip%></td>
+			</tr>
+	 
+
+					<tr>
+					
+			<th>Insurance:</th>
+			<td><%=user.insurance%></td>
+		</tr>
+		<tr>
+			<th>Primary Care Physician:</th>
+			<td><%=user.doctor%></td>
+		</tr>
+	 
+		
+	</table>
+				
+
+
+
+
+				
+		
+		<form action="/" method="get">
+			<button class="btn btn-success col-sm-4" id="search-btn">Doctor Search</button>
+		</form>
+			</div>
+		</tr>
+		<div class = "col-sm-4">
+		<form action="/doctorAdd" method="post">
+
+			<table>
+				<h3>Favorite Doctors:</h3>
+
+					<tr> 
+						 <td>Dr. Victor Von Doom</td>
+			
+
+					</tr>
+					<tr> 
+						 <td>Dr. Otto Octavius </td>
+					</tr>
+					<tr> 
+						 <td>Dr. Acula</td>
+					</tr>
+					<tr> 
+						 <td>Dr. Dre</td>
+					</tr>
+					<tr>
+						<td>Dr. Who</td>
+					</tr>
+			</table>
+		</form>
+		</div>
+
+	</div>
+
+
+	</div>
+	<div class="col-sm-12">
+			<div class="footer">2017 Frontend Project: Nikolas, Taylor, Saif, Zach
+
+
+
+
+</body>
+</html>
